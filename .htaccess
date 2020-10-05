@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteRule ^index   index.php?page=index&%{QUERY_STRING}
+RewriteRule ^login   index.php?page=login&%{QUERY_STRING}
+RewriteRule ^register   index.php?page=register&%{QUERY_STRING}
+RewriteRule ^profile   index.php?page=profile&%{QUERY_STRING}
+
+RewriteRule ^auth   index.php?act=authorize&%{QUERY_STRING}
+RewriteRule ^toregister   index.php?act=toregister&%{QUERY_STRING}
+RewriteRule ^logout   index.php?act=logout&%{QUERY_STRING}
+RewriteRule ^touploadavatar   index.php?act=touploadavatar&%{QUERY_STRING}
